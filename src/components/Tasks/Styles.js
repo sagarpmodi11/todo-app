@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
     flex: 1,
     backgroundColor: "lightgrey",
-    padding: 10,
+    padding: 5,
   },
 });
 

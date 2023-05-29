@@ -6,7 +6,12 @@ const styles = StyleSheet.create({
     backgroundColor: "orange",
     alignItems: "center",
     padding: 10,
-    marginTop: 30,
+  },
+
+  textcontainer: {
+    marginLeft: 5,
+    fontSize: 15,
+    fontWeight: "bold",
   },
 });
 

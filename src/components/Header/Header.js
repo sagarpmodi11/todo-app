@@ -7,8 +7,8 @@ export default function Header() {
   return (
     <View style={styles.container}>
       <FontAwesome5 name="list" size={24} />
-      <Text>Todo App</Text>
-      <Text>By Sagar Modi</Text>
+      <Text style={styles.textcontainer}>Todo App</Text>
+      <Text style={styles.textcontainer}>By Sagar Modi</Text>
     </View>
   );
 }
