@@ -4,11 +4,7 @@ import styles from "./Styles";
 
 export default function Task(props) {
   return (
-    <ScrollView
-      horizontal={true}
-      directionalLockEnabled={true}
-      // style={{ flex: 1, height: 100 }}
-    >
+    <ScrollView horizontal={true} directionalLockEnabled={true}>
       <View style={styles.container}>
         <Text>{props.task.id}</Text>
         <Text>{props.task.task}</Text>
