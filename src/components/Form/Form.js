@@ -13,7 +13,6 @@ import styles from "./Styles";
 export default function Form(props) {
   const [isEnabled, setIsEnabled] = useState(false);
   const [taskText, setTask] = useState("");
-  const [error, setError] = useState("Please input your task!!");
   return (
     <View style={styles.container}>
       <View style={styles.inputContainer}>
@@ -42,16 +41,15 @@ export default function Form(props) {
       </Pressable>
     </View>
   );
+
   function callOnPress() {
     if (taskText) {
       props.onAddTask(taskText, isEnabled);
       setTask("");
-      setError(null);
       setIsEnabled(false);
       Keyboard.dismiss();
     } else {
-      setError("Please input your task!!");
-      Alert.alert(error);
+      Alert.alert("Please input your task!!");
     }
   }
   function taskTextChange(value) {

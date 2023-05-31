@@ -1,12 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import {
-  TouchableWithoutFeedback,
-  Keyboard,
-  View,
-  SafeAreaView,
-  Platform,
-  NativeModules,
-} from "react-native";
+import { View, SafeAreaView, Platform, NativeModules } from "react-native";
 import uuid from "react-uuid";
 import Header from "./src/components/Header/Header";
 import Tasks from "./src/components/Tasks/Tasks";
